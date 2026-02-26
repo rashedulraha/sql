@@ -1,0 +1,14 @@
+-- CREATE TABLE student (
+-- id INT PRIMARY KEY,
+-- name  VARCHAR(50),
+-- age INT  NOT NULL
+-- );
+
+-- INSERT INTO student VALUE(1,"RASHEDUL ISLAM",21);
+-- INSERT INTO student VALUE(2,"ABDULLAH AL SAZIB",22);
+
+
+-- SELECT *
+-- FROM student;
+
+CREATE DATABASE IF NOT EXISTS college;
