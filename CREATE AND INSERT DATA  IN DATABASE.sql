@@ -1,0 +1,13 @@
+
+CREATE TABLE clear(
+id INT PRIMARY KEY ,
+name 	VARCHAR(50),
+age INT NOT NULL 
+);
+
+INSERT INTO student VALUE (1,"RASHEDUL ISLAM",26);
+INSERT INTO student VALUE (2 , "ROMMAN",25);
+
+
+SELECT *
+FROM student;
