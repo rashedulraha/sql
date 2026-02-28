@@ -24,7 +24,7 @@ age INT NOT NULL
 SELECT * FROM student;
 
 -- insert data in table;
- INSERT INTO student(rollname,name)VALUE (101,"Rashedul"),(102,"Abdullah"),(103,"Romman");
+ INSERT INTO student(rollbo,name)VALUE (101,"Rashedul"),(102,"Abdullah"),(103,"Romman");
 
 
  
