@@ -25,5 +25,7 @@ INSERT INTO student (rollno  , name, marks , grade , city ) VALUE
  
 
 -- Get all  table data 
+
 SELECT * FROM student ; 
+-- SELECT name , grade  FROM student;
 
