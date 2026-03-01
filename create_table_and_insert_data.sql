@@ -1,6 +1,7 @@
 -- create database
 CREATE DATABASE collage ;
  -- use database 
+USE xyz_company ;
 USE collage ;
 
 -- CREATE TABLE student 
@@ -23,9 +24,26 @@ INSERT INTO student (rollno  , name, marks , grade , city ) VALUE
  (104,"dharub" ,50,"D","Delhi"),
  (105,"emanuz" ,90,"A","Gaganpur");
  
+ INSERT INTO student (rollno  , name, marks , grade , city ) VALUE  (106,"Nakib" ,89,"A","Gaganpur");
+ 
+ 
 
 -- Get all  table data 
 
 SELECT * FROM student ; 
 -- SELECT name , grade  FROM student;
+-- duplicate  value
+SELECT DISTINCT city FROM student ;
+
+--  WHERE STATEMENT 
+ SELECT DISTINCT * FROM 	student   WHERE marks > 80 ; 
+ 
+  -- where  find by city 
+  SELECT DISTINCT * FROM student WHERE marks > 80 AND  city = 'Gaganpur';
+  
+  -- FIND IN CITY 
+  SELECT * FROM student WHERE city IN ("Gaganpur" , "Dhaka");
+  
+  -- Limit 
+  SELECT * FROM student WHERE marks > 75 LIMIT 2 ;
 
