@@ -14,3 +14,10 @@ INSERT INTO student (rollno , name , marks, grade ,city) VALUE
 (580,"nothing",89,"A","Dhaka"),
 (581,"nothing more",79,"A","Naogaon"),
 (582,"hello my sql",89,"A","khulna");
+
+
+
+ -- check value is not  null
+ SELECT  name,marks ,grade FROM student 
+ WHERE name IS NOT NULL;
+ 
