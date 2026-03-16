@@ -1,23 +1,35 @@
--- SELECT * FROM student ORDER BY marks DESC LIMIT 4;
-USE collage;
+-- ORDER FILE EXAMPLE
 
+-- Show top 4 students by marks
+SELECT * FROM student 
+ORDER BY marks DESC 
+LIMIT 4;
 
+-- Select database
+USE college;
+
+-- Show all data
 SELECT * FROM student;
-INSERT INTO student VALUE (202, "Nakib",56,"D","Kholna");
-INSERT INTO student VALUE (205, "",56,"D","Kholna");
 
---  INSERT DATA ONLY SPECIFIC  COLOUMNS
+-- Insert single rows
+INSERT INTO student VALUES 
+(202, "Nakib", 56, "D", "Khulna");
 
-INSERT INTO student (rollno ,marks ,  grade , city) VALUE (560,89,"D","MANIKGONGO");
--- insert into multiple vlaue in database 
-INSERT INTO student (rollno , name , marks, grade ,city) VALUE 
-(580,"nothing",89,"A","Dhaka"),
-(581,"nothing more",79,"A","Naogaon"),
-(582,"hello my sql",89,"A","khulna");
+INSERT INTO student VALUES 
+(205, "Unknown", 56, "D", "Khulna");
 
+-- Insert data into specific columns
+INSERT INTO student (rollno, marks, grade, city) 
+VALUES (560, 89, "D", "Manikganj");
 
+-- Insert multiple rows
+INSERT INTO student (rollno, name, marks, grade, city) 
+VALUES
+(580, "Nothing", 89, "A", "Dhaka"),
+(581, "Nothing More", 79, "A", "Naogaon"),
+(582, "Hello MySQL", 89, "A", "Khulna");
 
- -- check value is not  null
- SELECT  name,marks ,grade FROM student 
- WHERE name IS NOT NULL;
- 
+-- Check values where name is not NULL
+SELECT name, marks, grade 
+FROM student
+WHERE name IS NOT NULL;
