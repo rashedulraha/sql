@@ -33,3 +33,5 @@ VALUES
 SELECT name, marks, grade 
 FROM student
 WHERE name IS NOT NULL;
+
+-- Check
